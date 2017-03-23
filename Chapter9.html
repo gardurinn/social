@@ -42,6 +42,7 @@
 			// Create bars
 			svg.selectAll("rect")
 			   .data(dataset)
+			   	.transition()			   
 			   .enter()
 			   .append("rect")
 			   .attr("x", function(d, i) {
@@ -90,13 +91,31 @@
 					// Update all rects
 					svg.selectAll("rect")
 			   			.data(dataset)
+			   			.transition()
 			   			.attr("y", function(d) {
 			   				return h-yScale(d);
 			   			})
 			   		 	.attr("height", function(d) {
 			   				return yScale(d); 
 			   			});
+			   			.attr("fill", function(d) {
+							return "rgb(0, 0, " + (d * 10) + ")";
+						});
 				});
+					
+					// Update all labels
+					svg.selectAll("text")
+						.data(dataset)
+						.text(function(d) {
+						return d;
+						})
+						.attr("x", function(d, i) {
+						return xScale(i) + xScale.rangeBand() / 2;
+						})
+						.attr("y", function(d) {
+							return h - yScale(d) + 14;
+				});
+
 			
 		</script>
 	</body>
