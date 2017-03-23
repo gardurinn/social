@@ -41,8 +41,7 @@
 
 			// Create bars
 			svg.selectAll("rect")
-			   .data(dataset)
-			   	.transition()			   
+			   .data(dataset)			   
 			   .enter()
 			   .append("rect")
 			   .attr("x", function(d, i) {
@@ -116,7 +115,7 @@
 							return h - yScale(d) + 14;
 						});
 
-									});
+					});
 		</script>
 	</body>
 </html>
