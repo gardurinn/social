@@ -87,7 +87,7 @@
 					var numValues = dataset.length; 						//Count original length of dataset
 					dataset = []; 											//Initialize empty array
 					for (var i = 0; i < numValues; i++) {					 //Loop numValues times
-						var newNumber = Math.floor(Math.random() * 25); 	//New random integer (0-24)
+						var newNumber = Math.floor(Math.random() * maxValue); 	//New random integer (0-24)
 						dataset.push(newNumber); 							//Add new number to array
 					}
 
@@ -129,6 +129,9 @@
 						.attr("y", function(d) {
 							return h - yScale(d) + 14;
 						});
+
+						//Update scale domain
+						yScale.domain([0, d3.max(dataset)]);
 
 					});
 		</script>
