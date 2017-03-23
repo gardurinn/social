@@ -91,6 +91,9 @@
 						dataset.push(newNumber); 							//Add new number to array
 					}
 
+					//Update scale domain
+						yScale.domain([0, d3.max(dataset)]);
+
 					// Update all rects
 					svg.selectAll("rect")
 			   			.data(dataset)
