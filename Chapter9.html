@@ -114,8 +114,10 @@
 						.delay(function(d,i){
 			   				return i*100;
 			   			})
-						.delay(1000)
-			   			.duration(5000)
+						.delay(function(d,i){
+			   				return i*100;
+			   			})
+			   			.duration(1500)
 			   			.ease("linear")
 						.text(function(d) {
 						return d;
