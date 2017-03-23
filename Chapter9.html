@@ -91,8 +91,10 @@
 					svg.selectAll("rect")
 			   			.data(dataset)
 			   			.transition()
-			   			.delay(1000)
-			   			.duration(2000)
+			   			.delay(function(d,i){
+			   				return i*100;
+			   			})
+			   			.duration(1000)
 			   			.ease("linear")
 			   			.attr("y", function(d) {
 			   				return h-yScale(d);
@@ -109,7 +111,12 @@
 					svg.selectAll("text")
 						.data(dataset)
 						.transition()
+						.delay(function(d,i){
+			   				return i*100;
+			   			})
+						.delay(1000)
 			   			.duration(5000)
+			   			.ease("linear")
 						.text(function(d) {
 						return d;
 						})
