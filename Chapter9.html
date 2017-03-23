@@ -91,7 +91,9 @@
 					svg.selectAll("rect")
 			   			.data(dataset)
 			   			.transition()
-			   			.duration(1000)
+			   			.delay(1000)
+			   			.duration(2000)
+			   			.ease("linear")
 			   			.attr("y", function(d) {
 			   				return h-yScale(d);
 			   			})
