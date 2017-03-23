@@ -9,12 +9,16 @@
 		</style>
 	</head>
 	<body>
+		<p>Click on this text to update the chart with new data values (once)</p>
+
 		<script type="text/javascript">
+
+
 
 			//Width and height
 			var w = 600;
 			var h = 250;
-			//var barPadding = 1;
+		
 			
 			var dataset = [ 5, 10, 13, 19, 21, 25, 22, 18, 15, 13,
 							11, 12, 15, 20, 18, 17, 16, 18, 23, 25 ];
@@ -34,6 +38,8 @@
 							.domain([0, d3.max(dataset)])
 							.range([0, h]);						
 
+
+			// Create bars
 			svg.selectAll("rect")
 			   .data(dataset)
 			   .enter()
@@ -71,7 +77,26 @@
 			   .attr("font-size", "11px")
 			   .attr("fill", "white");
 
+			
 
+			// Update data on click
+			d3.select("p")
+			.on("click", function() {
+			
+					//New values for dataset
+					dataset = [ 11, 12, 15, 20, 18, 17, 16, 18, 23, 25,
+								5, 10, 13, 19, 21, 25, 22, 18, 15, 13 ];
+
+					// Update all rects
+					svg.selectAll("rect")
+			   			.data(dataset)
+			   			.attr("y", function(d) {
+			   				return h-yScale(d);
+			   			});
+			   		 	.attr("height", function(d) {
+			   				return yScale(d);
+			   			});
+				});
 			
 		</script>
 	</body>
