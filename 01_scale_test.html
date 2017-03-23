@@ -36,11 +36,17 @@
 								 .domain([0, d3.max(dataset, function(d) {return d[1]; })])
 								 .range([2, 5]);
 
+
 			//Create SVG element
 			var svg = d3.select("body")
 						.append("svg")
 						.attr("width", w)
 						.attr("height", h);	
+
+			// Create axis function
+			var xAxis = d3.svg.axis();
+								.scale(xScale)
+								.orient("bottom");
 
 			//Create the circles
 			svg.selectAll("circle")
@@ -75,6 +81,10 @@
 			   .attr("font-family", "sans-serif")
 			   .attr("font-size", "11px")
 			   .attr("fill", "red");
+
+			   //Call the axis function
+			   svg.append("g")
+			   			.call(xAxis);
 
 		</script>
 	</body>
