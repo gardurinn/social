@@ -7,26 +7,38 @@
     </head>
     <body>
         <script type="text/javascript">
-             // Reading in the data
-            var DataSet2003 = d3.csv("DataSet2003", function(data) {
-                console.log(data);
-            });
-            var DataSet2015 = d3.csv("DataSet2015", function(data) {
-                console.log(data);
-            });
+
+        
+        var DataSet2003;
 
 
+        d3.csv("DataSet2003", function(DataSet2003) {
+
+            DataSet2003.forEach(function(d) {
+                d.Category = +d.Category;
+                d.NumPros = +d.NumPros;
+                d.NumVehicle = +d.NumVehicle;
+            });
+
+            //var DataSet2015 = d3.csv("DataSet2015", function(data) {
+                
+        
             //Width and height
             var w = 600;
             var h = 250;
 
-            var xScale = d3.scale.ordinal()
-                            .domain(d3.range(DataSet2003.length))
-                            .rangeRoundBands([0, w], 0.05);
+            var xScale = d3.scale.linear()
+                            .domain([0, d3.max(DataSet2003, function(d) {return d['NumPros']; })])
+                            .range(0, w);
 
             var yScale = d3.scale.linear()
-                            .domain([0, d3.max(DataSet2003)])
+                            .domain([0, d3.max(DataSet2003, function(d) {return d['NumVehicle']; })])
                             .range([0, h]);   
+
+
+            var rScale = d3.scale.linear()
+                            .domain([0, d3.max(dataset, function(d) { return d['NumVehicle']; })])
+                            .range([2, 5]);                            
 
             //Create SVG element
             var svg = d3.select("body")
