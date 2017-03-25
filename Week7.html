@@ -3,11 +3,16 @@
     <head>
         <meta charset="utf-8">
         <title>Exercises week 7</title>
-        <script type="text/javascript" src="d3.v3.js"></script>
+        <script type="text/javascript" src="d3/d3.v3.js"></script>
     </head>
     <body>
         <script type="text/javascript">
-            // Your beautiful D3 code will go here
+            d3.csv("DataSet2003.csv", function(error,data)  {
+                data.forEach(function(d) {
+                    d.date = parseDate(d.date);
+                    d.close = +d.close;
+                });
+            })
         </script>
         <div>
             <h1>Visualization 1</h1>
