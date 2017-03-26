@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>D3 Page Template</title>
+		<script type="text/javascript" src="d3/d3.v3.js"></script>
+		<link rel="stylesheet" href="style.css">
+	</head>	
+	<body>
+		
+		<script type="text/javascript">
+		var dataset = [ 5, 10, 15, 20, 25 ];
+			
+			d3.select("body").selectAll("p")
+				.data(dataset)
+				.enter()
+				.append("p")
+				.text(function(d) {return "I can count up to " + d;})
+				.style("color",function(d){
+					if (d>15) {
+						return "red";
+					} else { 
+					return "black"; 
+					}
+							 }
+					  );
+		</script>
+		<svg width="500", height="200">
+			<rect x="0" y="20" width="80", height="80" fill="purple" stroke="gray" opacity="1" stroke="gray"/>
+			<rect x="50" y="15" width="80", height="80" fill="blue" stroke="gray" opacity="0.8" stroke="gray"/>
+			<rect x="100" y="10" width="80", height="80" fill="green" stroke="gray" opacity="0.6" stroke="gray"/>
+			<rect x="150" y="5" width="80", height="80" fill="yellow" stroke="gray" opacity="0.4" stroke="gray"/>
+			<rect x="200" y="0" width="80", height="80" fill="red" stroke="gray" opacity="0.2" stroke="gray"/>
+		</svg>
+		<div>
+		<a href="https://gardurinn.github.io/social/01_scale_test.html">Chapter 7</a><br>
+		<a href="https://gardurinn.github.io/social/axes_random.html">Chapter 8</a> <br>
+		<a href="https://gardurinn.github.io/social/Chapter9.html">Chapter 9</a> <br>
+		<a href="https://gardurinn.github.io/social/Week7.html">Exercise week 7</a> <br>
+
+		</div>
+	</body>
+</html>
