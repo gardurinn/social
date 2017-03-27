@@ -2,6 +2,7 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
+    <link rel="Coffee" href="favicon.ico" />
     <meta charset="utf-8">
     <title> D3: Assignment 2</title>
     <script type="text/javascript" src="d3/d3.js"></script>
@@ -94,12 +95,15 @@
         <div>
             <div class="section">
                     <h2> Assignment 2A: One scatter and two datasets </h2>
-                    <p>The scatter plot below helps us visualizing the total number of crime in San Fransisco with respect to prostitution and vehicle theft crime in the years 2003 and 2015. The x-axis corresponds to the total number of prostitution incidents and the y-axis to the total number of vehicle theft incidents. The size of the circles are proportional to the total number of crime. <br> </p>
+                    <p>The scatter plot below helps us visualizing the total number of crime in San Fransisco with respect to prostitution and vehicle theft crime in the years 2003 and 2015. The x-axis corresponds to the total number of prostitution incidents and the y-axis to the total number of vehicle theft incidents. The size of the circles are proportional to the total number of crime in each district. <br> </p>
                 <div>
                 <strong> Explain in your own words why you think I want the axes to be the same for both years? <br> </strong>
                         <p2>When toggling between years 2003 and 2015, it's easy to see that the number of prostitution and vehicle theft crimes decreases significantly when going from 2003 to 2015 , although the total number of crime in each area remains pretty much the same. It's easy to see that the size of the circles are constant while their position changes quite a lot. Thus, keeping the axes constant for both years is a major key for this visualization, as its purpose is to illustrate how the prostitution and vehicle theft crime rates decreases while total crime rate remains the same.<br> </p2>
                </div>
+               <div><br>
+
                         <button id='id2003'>  Click to toggle between data from <p4> 2003 </p4> and <p3> 2015.</p3></button>
+                        </div>
              </div>
                 <div class ="viz1 Viz"></div>
 
@@ -112,7 +116,7 @@
              <h2> Assignment 2B</h2>
             <p>The map shows a geoplot of San Francisco. On the map we visualise K-means clustering, for K = 2,.., 6.  The buttons below represent how many clusters, with a centroid, will be shown. The centroids are represented with a large coloured circle and the clustered data is the same colour as the corresponding centroid.</p>
             <strong>Why is the size of the file important?</strong>
-             <p>  We want to keep the file as small as possible. The data is read each time a button is clicked. We want the delay time to be as low as possible, so it is obvious that if the size of the data is smaller, then the site will upload faster. Our data is approximately 750 KB, so we expect it to lag a little, but not immensely..</p>
+             <p>  We want to keep the file as small as possible. The data is read each time a button is clicked. We want the delay time to be as low as possible, so it is obvious that if the size of the data is smaller, then the site will upload faster. Our data is approximately 750 KB, so we expect it to lag a little, but not immensely.</p>
              
               <button id="KMean2" class="kernelButton">K2</button>
               <button id="KMean3" class="kernelButton">K3</button>
@@ -377,6 +381,8 @@
             var locations = svg.append("g");
             var centers = svg.append("g");
 
+
+
       var color = ['#4286f4','#f47d41', '#f4f441', '#41f441','#eb41f4','red'];
 
 
@@ -440,12 +446,24 @@
                                 });
                             }
 
+
+
 d3.selectAll(".kernelButton").on("click", function(){
             buttonID = d3.select(this).attr("id")
             drawLocation(buttonID)
             drawCenters(buttonID)
             console.log(buttonID)
             });
+
+        // Add a title to the graph
+        var title = svg.append("text")
+            .attr("x", (w2 / 2))
+            .attr("y", 30)
+            .attr("text-anchor", "middle")
+            .attr("fill", colors[2])
+            .attr("font-family", "sans-serif")
+            .style("font-size", "20px")
+            .text("K-means clustering for prostitution in SF");
 
 
             });
