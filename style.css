@@ -1,0 +1,226 @@
+/* Color pallette 1: #6ed3cf #9068be #e1e8f0 #e62739 */
+
+/*#252839
+#677077
+#b5b5b7
+#f2b632
+*/
+
+/*
+#0D0D0D
+#F2F2F2
+#F2E205
+#D91E0D
+#BEBEBE
+#8C0404
+*/
+
+
+
+body {
+	height:100%;
+	background-color: #F2F2F2;
+	background: transparent;
+	}
+
+header {
+	color: #8C0404;
+	font-family: sans-serif;
+	font-size: 150%;
+	text-align: center;
+}
+
+
+#text {
+	color: #0D0D0D;
+	margin: 20px 0 20px 0;
+	font-family: sans-serif;
+	font-size: 100%;
+	padding: 30px;
+	text-align: center;
+}
+
+#graphTitle {
+	color: #8C0404;
+	font-family: sans-serif;
+	font-size: 150%;
+	padding: 20px;
+	margin: 10px;
+	text-align: center;
+	font-weight: bold;
+
+}
+
+div.container {
+	color: #677077;
+	margin: 30px;
+	font-family: sans-serif;
+	font-size: 100%;
+	padding: 3px;
+	text-align: center;
+	border: 1px solid red;
+	margin: auto;
+	width: 90%;
+}
+
+div.textcontainer {
+	color: #677077;
+	margin: 30px;
+	font-family: sans-serif;
+	font-size: 120%;
+	padding: 30px;
+	text-align: left;
+	border: 1px solid red;
+	margin: auto;
+	width: 90%;
+}
+
+div.figContainer {
+    position: absolute;
+    bottom: 70px;
+    width: 200px;
+    height: 100px;
+}
+
+
+div.relative {
+    position: relative;
+    width: 400px;
+    height: 200px;
+    border: 3px solid #8AC007;
+}
+
+div.KNNplots {
+	color: #677077;
+	margin: 10px;
+	font-family: sans-serif;
+	font-size: 100%;
+	padding: 3px;
+	text-align: center;
+	border: 1px solid red;
+	float: right;
+	width: 60%;
+}
+
+div.section {
+	margin: 50px;
+	padding: 30px;
+	text-align: center;
+	margin: 20px 0 20px 0;
+
+}
+
+div.box {
+  display: inline-block;
+  width: 200px;
+  height: 100px;
+  margin: 1em;
+}
+
+
+.axis path,
+.axis line {
+    fill:#8C0404;
+    stroke: #8C0404;
+    shape-rendering: auto;
+}
+.axis text {
+    font-family: sans-serif;
+    font-size: 12px;
+    fill: #8C0404;
+    text-align: left;
+
+}
+
+.labels {
+    font-family: sans-serif;
+    font-size: 11px;
+    font-weight: bold;
+}
+
+
+            .axis path,
+            .axis line {
+                fill:none;
+                stroke: black;
+                shape-rendering: auto;
+            }
+            .axis text {
+                font-family: sans-serif;
+                font-size: 11px;
+            }
+
+            text, h1, h2, p, strong {
+                font-family: Helvetica, Arial, sans-serif;
+            }
+
+            p2 {
+                text-align:center;
+                font-family: Helvetica, Arial, sans-serif;
+            }
+            p3 {
+                font-weight: bold;
+                text-align:center;
+                color:#00fa9a;
+                font-family: Helvetica, Arial, sans-serif;
+            }
+            p4 {
+                font-weight: bold;
+                text-align:center;
+                color: #8dadde;
+                font-family: Helvetica, Arial, sans-serif;
+            }
+
+            .mapDistrict {
+              fill:#E6E6E6;
+            }
+            .mapDistrict:hover {
+              fill:#CCCCCC;
+            }
+
+            .place,
+            .place-label {
+              fill: #444;
+            }
+
+            .section {
+                width: 1000px;
+                height: 200px;
+                margin: 0 auto;
+                text-align: center;
+            }
+
+            .d3-tip {
+          		  line-height: 1;
+          		  text-align: center;
+          		  padding: 12px;
+          		  background: rgba(0, 0, 0, 0.8);
+          		  color: #fff;
+          		  border-radius: 4px;
+          		}
+
+            .Viz{
+                text-align: center;
+            }
+
+
+.bla{
+    display: inline-block;
+    word-wrap: break-word;;
+}
+
+            button {
+                margin: 0 auto;
+                background-color:#ededed;
+                -moz-border-radius:6px;
+                -webkit-border-radius:6px;
+                border-radius:6px;
+                border:1px solid #dcdcdc;
+                display:inline-block;
+                cursor:pointer;
+                color:#000000;
+                font-size:15px;
+                font-weight:bold;
+                padding:6px 24px;
+                text-decoration:none;
+             }
