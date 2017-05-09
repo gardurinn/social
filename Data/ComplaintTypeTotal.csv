@@ -1,0 +1,174 @@
+Complaint Type,Total,Color
+Gas Station Discharge Lines,1,Blue
+AGENCY,1,Blue
+Laboratory,1,Blue
+Forensic Engineering,2,Blue
+VACANT APARTMENT,2,Blue
+Public Assembly - Temporary,3,Blue
+Standpipe - Mechanical,3,Blue
+Building Condition,3,Blue
+Squeegee,4,Blue
+Interior Demo,4,Blue
+Tanning,5,Blue
+Radioactive Material,5,Blue
+Rangehood,6,Blue
+SRDE,7,Blue
+Sprinkler - Mechanical,7,Blue
+Fire Alarm - Replacement,8,Blue
+X-Ray Machine/Equipment,8,Blue
+Hazmat Storage/Use,9,Blue
+Calorie Labeling,11,Blue
+Legal Services Provider Complaint,12,Blue
+Foam Ban Enforcement,15,Blue
+Lifeguard,16,Blue
+Bottled Water,16,Blue
+Transportation Provider Complaint,17,Blue
+Fire Alarm - Addition,19,Blue
+Day Care,23,Blue
+Overflowing Recycling Baskets,36,Blue
+Public Assembly,36,Blue
+Open Flame Permit,37,Blue
+Stalled Sites,42,Blue
+Illegal Animal Sold,51,Blue
+Window Guard,52,Blue
+Public Toilet,54,Blue
+Adopt-A-Basket,59,Blue
+Miscellaneous Categories,65,Blue
+Special Natural Area District (SNAD),65,Blue
+Animal Facility - No Permit,74,Blue
+Literature Request,88,Blue
+Unsanitary Animal Facility,89,Blue
+Tattooing,96,Blue
+Municipal Parking Facility,97,Blue
+Emergency Response Team (ERT),116,Blue
+Fire Alarm - New System,118,Blue
+Fire Alarm - Modification,120,Blue
+Poison Ivy,131,Blue
+Bike Rack Condition,133,Blue
+Drinking Water,142,Blue
+Illegal Fireworks,167,Blue
+Collection Truck Noise,178,Blue
+Beach/Pool/Sauna Complaint,180,Blue
+Bus Stop Shelter Placement,192,Blue
+Harboring Bees/Wasps,223,Blue
+Plant,225,Blue
+Scaffold Safety,243,Blue
+Cranes and Derricks,248,Blue
+Senior Center Complaint,266,Blue
+Illegal Animal Kept as Pet,283,Blue
+Fire Alarm - Reinspection,286,Blue
+City Vehicle Placard Complaint,312,Blue
+Disorderly Youth,314,Blue
+Found Property,315,Blue
+Panhandling,319,Blue
+Bridge Condition,332,Blue
+Mold,342,Blue
+For Hire Vehicle Report,355,Blue
+Sweeping/Inadequate,394,Blue
+Animal in a Park,419,Blue
+BEST/Site Safety,424,Blue
+Public Payphone Complaint,426,Blue
+Bike/Roller/Skate Chronic,462,Blue
+Violation of Park Rules,518,Blue
+Unsanitary Pigeon Condition,612,Blue
+Unleashed Dog,639,Blue
+Urinating in Public,639,Blue
+DPR Internal,643,Blue
+Posting Advertisement,675,Blue
+Broken Parking Meter,775,Blue
+Investigations and Discipline (IAD),820,Blue
+Recycling Enforcement,980,Blue
+Noise - House of Worship,1058,Blue
+EAP Inspection - F59,1074,Blue
+ELEVATOR,1094,Blue
+Indoor Sewage,1207,Blue
+Water Quality,1229,Blue
+Sweeping/Missed,1254,Blue
+Derelict Bicycle,1255,Blue
+Non-Residential Heat,1334,Blue
+Drinking,1395,Blue
+Boilers,1395,Blue
+Industrial Waste,1415,Blue
+Overflowing Litter Baskets,1471,Blue
+Noise - Helicopter,1493,Blue
+School Maintenance,1511,Blue
+Curb Condition,1577,Blue
+Standing Water,1603,Blue
+OUTSIDE BUILDING,1679,Blue
+Smoking,1726,Blue
+Street Sign - Dangling,1798,Blue
+Vacant Lot,1958,Blue
+Lead,2308,Blue
+Unsanitary Animal Pvt Property,2328,Blue
+Asbestos,2342,Blue
+Litter Basket / Request,2491,Blue
+Illegal Tree Damage,2550,Blue
+Electrical,2734,Blue
+Hazardous Materials,3001,Blue
+Food Poisoning,3005,Blue
+Taxi Report,3025,Blue
+Special Projects Inspection Team (SPIT),3161,Blue
+Maintenance or Facility,3406,Blue
+For Hire Vehicle Complaint,3877,Blue
+Special Enforcement,3947,Blue
+Noise - Park,3994,Blue
+Street Sign - Missing,4047,Blue
+Vending,4140,Blue
+Plumbing,4576,Blue
+Highway Condition,4678,Blue
+Fire Safety Director - F58,4690,Blue
+Indoor Air Quality,4785,Blue
+Homeless Encampment,4820,Blue
+Street Sign - Damaged,4970,Blue
+Traffic,5164,Blue
+Sidewalk Condition,5327,Blue
+Water Conservation,5959,Blue
+Homeless Person Assistance,6240,Blue
+Other Enforcement,6377,Blue
+Construction,7005,Blue
+Non-Emergency Police Matter,7454,Blue
+Air Quality,8337,Blue
+Elevator,9551,Blue
+Food Establishment,9570,Blue
+SAFETY,9835,Blue
+Root/Sewer/Sidewalk Condition,9936,Blue
+Dead Tree,10306,Blue
+Animal Abuse,10484,Blue
+APPLIANCE,11215,Blue
+Snow,12698,Blue
+Graffiti,13184,Blue
+New Tree Request,14880,Blue
+Overgrown Tree/Branches,15031,Blue
+Taxi Complaint,16840,Blue
+Consumer Complaint,17009,Blue
+Damaged Tree,17626,Blue
+Derelict Vehicles,18552,Blue
+Noise - Vehicle,19105,Blue
+Derelict Vehicle,21385,Blue
+Broken Muni Meter,22362,Blue
+Building/Use,24876,Blue
+Traffic Signal Condition,25139,Blue
+Missed Collection (All Materials),25156,Blue
+GENERAL,26715,Blue
+General Construction/Plumbing,27169,Blue
+FLOORING/STAIRS,27742,Blue
+Rodent,29193,Blue
+ELECTRIC,30074,Blue
+Sewer,30730,Blue
+Sanitation Condition,31162,Blue
+Dirty Conditions,33745,Blue
+WATER LEAK,35475,Blue
+DOOR/WINDOW,39916,Blue
+Noise - Commercial,43541,Blue
+Noise - Street/Sidewalk,50777,Blue
+PLUMBING,55282,Blue
+Noise,56311,Blue
+Street Light Condition,58631,Blue
+Water System,69216,Blue
+PAINT/PLASTER,69557,Blue
+UNSANITARY CONDITION,82718,Blue
+Illegal Parking,90862,Blue
+Blocked Driveway,100192,Blue
+Street Condition,118479,Blue
+Noise - Residential,205826,Red
+HEAT/HOT WATER,225042,Blue
